@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  --color-paper: #f5f6f2;
+  --color-ink: #1a1d1b;
+  --color-ink-muted: #6b6f68;
+  --color-line: #d8dac d3;
+  --color-surface: #fbfbf9;
+  --color-confirmed: #2f6b4f;
+  --color-flagged: #b8792b;
+  --color-critical: #b23b3b;
+
+  --font-sans: var(--font-public-sans);
+  --font-mono: var(--font-plex-mono);
+}
+
+body {
+  background-color: var(--color-paper);
+  color: var(--color-ink);
+}
+
+::selection {
+  background-color: var(--color-ink);
+  color: var(--color-paper);
+}
